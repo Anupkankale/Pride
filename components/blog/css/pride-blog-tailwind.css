@@ -1,0 +1,207 @@
+/* Base blog container */
+.pride-blog-container {
+    @apply container mx-auto px-4 py-8;
+}
+
+/* Blog grid layout */
+.pride-blog-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Blog list layout */
+.pride-blog-list {
+    @apply space-y-8;
+}
+
+/* Blog post card */
+.pride-blog-post {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Post thumbnail */
+.pride-blog-thumbnail {
+    @apply relative w-full h-48 overflow-hidden;
+}
+
+.pride-blog-thumbnail img {
+    @apply w-full h-full object-cover;
+}
+
+/* Post content */
+.pride-blog-content {
+    @apply p-6;
+}
+
+.pride-blog-title {
+    @apply text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-200;
+}
+
+.pride-blog-excerpt {
+    @apply text-gray-600 text-sm mb-4 line-clamp-3;
+}
+
+/* Meta information */
+.pride-blog-meta {
+    @apply flex items-center justify-between text-xs text-gray-500 border-t border-gray-100 mt-4 pt-4;
+}
+
+.pride-blog-author {
+    @apply flex items-center;
+}
+
+.pride-blog-author img {
+    @apply w-6 h-6 rounded-full mr-2;
+}
+
+.pride-blog-date {
+    @apply text-gray-400;
+}
+
+/* Category tags */
+.pride-blog-categories {
+    @apply flex flex-wrap gap-2 mb-3;
+}
+
+.pride-blog-category {
+    @apply px-2 py-1 text-xs rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors duration-200;
+}
+
+/* Read more button */
+.pride-blog-read-more {
+    @apply inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors duration-200;
+}
+
+.pride-blog-read-more svg {
+    @apply ml-1 w-4 h-4;
+}
+
+/* Pagination */
+.pride-blog-pagination {
+    @apply flex justify-center items-center space-x-2 mt-8;
+}
+
+.pride-blog-pagination button {
+    @apply px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50;
+}
+
+.pride-blog-pagination button.active {
+    @apply bg-blue-600 text-white border-blue-600 hover:bg-blue-700;
+}
+
+/* Loading state */
+.pride-blog-loading {
+    @apply flex justify-center items-center py-8;
+}
+
+.pride-blog-loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-2 border-gray-300 border-t-blue-600;
+}
+
+/* No posts state */
+.pride-blog-no-posts {
+    @apply text-center py-12 text-gray-500;
+}
+
+/* Responsive adjustments */
+@screen sm {
+    .pride-blog-grid {
+        @apply grid-cols-2;
+    }
+}
+
+@screen lg {
+    .pride-blog-grid {
+        @apply grid-cols-3;
+    }
+}
+
+/* Filter sidebar */
+.pride-blog-filters {
+    @apply space-y-6 p-6 bg-white rounded-lg shadow-md;
+}
+
+.pride-blog-filter-section {
+    @apply space-y-2;
+}
+
+.pride-blog-filter-title {
+    @apply text-lg font-semibold text-gray-800;
+}
+
+.pride-blog-filter-options {
+    @apply space-y-2;
+}
+
+.pride-blog-filter-option {
+    @apply flex items-center;
+}
+
+.pride-blog-filter-checkbox {
+    @apply w-4 h-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500;
+}
+
+.pride-blog-filter-label {
+    @apply ml-2 text-sm text-gray-600;
+}
+
+/* Search bar */
+.pride-blog-search {
+    @apply relative mb-6;
+}
+
+.pride-blog-search input {
+    @apply w-full px-4 py-2 pl-10 text-sm text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.pride-blog-search svg {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500;
+}
+
+/* Sort dropdown */
+.pride-blog-sort {
+    @apply relative inline-block mb-6;
+}
+
+.pride-blog-sort select {
+    @apply block w-full px-4 py-2 text-sm text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 appearance-none pr-8;
+}
+
+.pride-blog-sort::after {
+    @apply absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none content-[''] border-gray-400 border-t-2 border-r-2 transform rotate-45;
+}
+
+/* Animations */
+.pride-blog-post {
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.pride-blog-post:hover {
+    @apply transform -translate-y-1;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .pride-blog-post {
+        @apply bg-gray-800;
+    }
+
+    .pride-blog-title {
+        @apply text-white hover:text-blue-400;
+    }
+
+    .pride-blog-excerpt {
+        @apply text-gray-300;
+    }
+
+    .pride-blog-meta {
+        @apply text-gray-400 border-gray-700;
+    }
+
+    .pride-blog-category {
+        @apply bg-blue-900 text-blue-300 hover:bg-blue-800;
+    }
+
+    .pride-blog-read-more {
+        @apply text-blue-400 hover:text-blue-300;
+    }
+} 

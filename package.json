@@ -1,0 +1,11 @@
+{
+  "name": "pride-plugin",
+  "version": "1.0.0",
+  "description": "A beautiful and modern WordPress plugin that provides a responsive image slider and UI components for your website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

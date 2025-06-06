@@ -1,0 +1,129 @@
+.pride-blog-admin {
+    margin: 20px;
+}
+
+.pride-admin-container {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pride-settings-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.pride-settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.pride-settings-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0073aa;
+    color: #23282d;
+    font-size: 1.3em;
+}
+
+.pride-setting-field {
+    margin-bottom: 20px;
+}
+
+.pride-setting-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.pride-setting-field input[type="number"],
+.pride-setting-field select {
+    width: 200px;
+}
+
+.pride-categories-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.pride-checkbox-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.pride-checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.pride-post-count {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.pride-shortcode-preview {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pride-shortcode-preview code {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-family: monospace;
+    flex-grow: 1;
+}
+
+.pride-submit-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
+/* WordPress Notice Styling */
+.notice {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.notice-success {
+    border-left: 4px solid #46b450;
+}
+
+.notice-error {
+    border-left: 4px solid #dc3232;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .pride-setting-field input[type="number"],
+    .pride-setting-field select {
+        width: 100%;
+    }
+
+    .pride-shortcode-preview {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pride-shortcode-preview code {
+        margin-bottom: 10px;
+    }
+} 

@@ -1,0 +1,123 @@
+/* Pride UI Components Admin Styles */
+
+.pride-admin-content {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+.pride-admin-tabs .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.pride-admin-tabs .tab-content {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 0 0 4px 4px;
+    margin-top: -1px;
+}
+
+.pride-admin-tabs .tab-pane {
+    display: none;
+}
+
+.pride-admin-tabs .tab-pane.active {
+    display: block;
+}
+
+.pride-admin-content code {
+    display: block;
+    padding: 15px;
+    background: #f5f5f5;
+    border: 1px solid #e2e4e7;
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.pride-admin-content ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.pride-admin-content li {
+    margin-bottom: 10px;
+}
+
+.pride-admin-content strong {
+    color: #1e1e1e;
+}
+
+/* Settings Form */
+.pride-settings-form {
+    max-width: 600px;
+}
+
+.pride-settings-form .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.pride-settings-form .form-table td {
+    padding: 20px 10px;
+}
+
+.pride-settings-form input[type="text"],
+.pride-settings-form input[type="number"],
+.pride-settings-form select {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Preview Section */
+.pride-preview-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e2e4e7;
+    border-radius: 4px;
+}
+
+.pride-preview-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+/* Help Section */
+.pride-help-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff8e5;
+    border: 1px solid #f0b849;
+    border-radius: 4px;
+}
+
+.pride-help-section h3 {
+    color: #975e00;
+    margin-top: 0;
+}
+
+/* Success/Error Messages */
+.pride-message {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.pride-message.success {
+    background: #ecf7ed;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.pride-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+} 
