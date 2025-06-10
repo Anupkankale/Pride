@@ -8,8 +8,6 @@ Add to any page/post:
 [pride_blog]
 ```
 
-
-
 ### 2. Custom Implementation
 ```php
 [pride_blog 
