@@ -106,6 +106,7 @@ pride-plugin/
 
 ## API Reference
 
+
 ### REST API Endpoints
 
 ```javascript
